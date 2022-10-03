@@ -2,9 +2,9 @@
 ## fall-22-mp1-work
 
 
-### Last Name:  
-### First Name: 
-### GitHub Username: 
+### Last Name:  Mirzayev   
+### First Name: James
+### GitHub Username: jamesM134
 
 ---
 #### General Workflow: 

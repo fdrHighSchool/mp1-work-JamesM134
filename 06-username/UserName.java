@@ -21,7 +21,7 @@ public class UserName {
     String FavNumber = s.nextLine();
 
     // test output
-    System.out.println("Hello " + getInitial(firstName) + "." + getInitial(lastName) + "." +(FavNumber));
+    System.out.println("Hello " + (firstName) + "." + getInitial(lastName) + "." +(FavNumber));
 
     s.close();
   } // end main method

@@ -19,10 +19,16 @@ public class UserName {
     String lastName = s.nextLine();
     System.out.print("what is your favorite number");
     String FavNumber = s.nextLine();
-
+    System.out.print("Are you a teacher or a student?");
+    String role = s.nextLine();
+    if (role .equals ("student")) {   
+        System.out.println((firstName) + getInitial(lastName) + (FavNumber) + "@nycstudents.net");
+    }//end of if
+    else {
+        System.out.println((firstName) + getInitial(lastName) + (FavNumber) + "@schools.nyc.gov");
+    }// end of else 
     // test output
-    System.out.println("Hello " + (firstName) + "." + getInitial(lastName) + "." +(FavNumber));
-
+    
     s.close();
   } // end main method
 

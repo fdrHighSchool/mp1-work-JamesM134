@@ -6,7 +6,7 @@
  * @version (a version number or a date)
  */
 import java.util.Scanner;
-
+import java.util.Random;
 public class UserName {
   public static void main(String[] args) {
     // create Scanner object
@@ -27,10 +27,20 @@ public class UserName {
     else {
         System.out.println((firstName) + getInitial(lastName) + (FavNumber) + "@schools.nyc.gov");
     }// end of else 
+
+    
     // test output
     
+    
+    generatePassword(8);
     s.close();
-  } // end main method
+    
+    
+    
+    
+    
+
+}// end main method
 
   /*
    * Name: getInitial
@@ -42,4 +52,38 @@ public class UserName {
     return n.substring(0, 1);
   } // end initialize method
 
-} // end class
+  
+  public static String generatePassword(int lenght) {
+    String password = "";
+    for (int i = 0; 1 < lenght; i++) {
+    int special = (int) (Math.random()*(33-47+1) + 47);        
+    int lowercase = (int) (Math.random()*(97-122+1) + 122);    
+    int random = (int)(Math.random()*(90-65+1) + 65);
+    char c = (char)random;
+   System.out.println(" your password is " + random + special + lowercase);
+   
+   return password;
+  }
+    }
+
+}
+    
+    
+    
+    
+    
+    
+    
+    
+  
+  //generate a random number
+    // 65 - 90 capital letter
+    // 97 - 122 lower case
+    // 33 - 47 special symbols
+    
+    // convert the int----> character c =(char)i;
+    
+    //add the char to the password String
+
+//end generatepassword method
+  // end class

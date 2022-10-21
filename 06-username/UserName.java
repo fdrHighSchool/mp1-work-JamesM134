@@ -40,8 +40,8 @@ public class UserName {
     
     
 
-}// end main method
-
+    }// end main method
+    
   /*
    * Name: getInitial
    * Purpose: send back the first character (inital) of a name
@@ -56,26 +56,22 @@ public class UserName {
   public static String generatePassword(int lenght) {
     String password = "";
     for (int i = 0; 1 < lenght; i++) {
-    int special = (int) (Math.random()*(33-47+1) + 47);        
-    int lowercase = (int) (Math.random()*(97-122+1) + 122);    
-    int random = (int)(Math.random()*(90-65+1) + 65);
-    char c = (char)random;
-   System.out.println(" your password is " + random + special + lowercase);
-   
-   return password;
-  }
+        int special = (int) (Math.random()*(33-47+1) + 47);        
+        int lowercase = (int) (Math.random()*(97-122+1) + 122);    
+        int random = (int)(Math.random()*(90-65+1) + 65);
+        char c = (char)random;
+    
+       System.out.println(" your password is " + random + special + lowercase);
+       
+       
     }
-
+  
+    return password;
+  }
+    
+   
 }
     
-    
-    
-    
-    
-    
-    
-    
-  
   //generate a random number
     // 65 - 90 capital letter
     // 97 - 122 lower case
